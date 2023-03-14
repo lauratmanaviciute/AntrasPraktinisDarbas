@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AntrasPraktinisDarbas</string>
+    <string name="app_name">Text Counter</string>
+    <string name="chars_selection">Characters</string>
+    <string name="words_selection">Words</string>
+    <string name="empty_text">Please enter text</string>
+    <string-array name="options_array">
+        <item>Characters</item>
+        <item>Words</item>
+    </string-array>
+
 </resources>
