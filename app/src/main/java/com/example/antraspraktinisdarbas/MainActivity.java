@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 String userInput = edMain.getText().toString();
                 String selectedOption = spCountingOptions.getSelectedItem().toString();
 
-                if(edMain.getText().toString().trim().isEmpty()){
+                if(edMain.getText().toString().isEmpty()){
                     Toast.makeText(getApplicationContext(), R.string.empty_text, Toast.LENGTH_SHORT).show();
                 } else if (selectedOption.equalsIgnoreCase(getResources().getString(R.string.chars_selection))) {
                     tvResult.setText(getString(R.string.chars_selection) + ": " + TextCounter.getCharsCount(userInput));
