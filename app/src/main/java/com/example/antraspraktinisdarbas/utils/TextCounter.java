@@ -6,7 +6,13 @@ public class TextCounter {
     }
 
     public static String getWordsCount(String inputString) {
-        String[] textArray = inputString.split(" ");
+        String trimmedInput = inputString.trim();
+        if (trimmedInput.isEmpty()) {
+            return "0";
+        }
+        String[] textArray = trimmedInput.split("\\s+");
         return String.valueOf(textArray.length);
     }
+
 }
+
